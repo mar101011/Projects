@@ -1,0 +1,371 @@
+.footerDetails{
+    display: flex; 
+    justify-content: space-around; /*Aplwnei omoiomorfa sto xwro pou uparxei */     
+    gap: 200px;                 
+    padding: 20px;
+}
+.contents{
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;/*to ena katw apo to allo sthlh dhladh*/
+    justify-content: center; /*kentro selidas*/
+    font-size:20px;
+    gap: 12px; /*keno anamesa sta links*/
+    margin-right: 100px;
+    margin-top: 60px;
+   
+}
+.contents a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;  /*afairei default apo link*/
+}
+
+fieldset {
+    display: grid;
+    color:azure;
+    text-align: center; 
+    border:none;
+    
+}
+
+.inputs{
+
+    width: 90%;           
+    padding: 10px;         
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 13px;
+    text-align: left;       
+    background-color: #f9f9f9;
+}
+
+header{
+            
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center; 
+    margin:0; 
+    margin-bottom: 30px;
+    padding: 20px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    background:rgba(105, 173, 218, 0.8);
+    border-bottom: solid 2px white ;
+    width: 100%;       
+    box-sizing: border-box;
+
+}
+footer{
+     text-align:center; 
+     margin:0; 
+     margin-top: 30px;
+     padding: 20px 0; 
+     background-color: rgba(219, 165, 49, 0.8);
+     border:solid white;
+     width: 100%;       
+     box-sizing: border-box;
+
+}
+       
+.contact{
+    color:azure;
+    margin-right: 30px;
+    
+}
+
+a{text-decoration: none; /*Afairei ypogramish*/
+    display: inline-block;
+color: rgba(55, 49, 114);}
+
+h2,h3,h4{
+    color:azure;
+    font-size: 30px;
+}
+
+h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.menu nav ul {
+    list-style-type: none; /*Feugoun oi koukides*/
+    display: flex; /* Mpainoun ta stoixeia to ena dipla sto allo */
+    
+    gap: 20px;/*Bazei keno anamesa sta koumpia*/
+
+}
+
+
+.menu nav {/*Το κοθμπι μπαινει διπλα στο μενου*/
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+/*Links mesa sto menu */
+.menu nav ul li a {
+    color: azure;  
+    
+}
+
+.LoginBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/847/539/small/abstract-background-with-gradient-yellow-color-suitable-for-design-needs-display-website-ui-and-others-free-photo.jpg");
+    background-size: cover;
+}
+
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #dedfe0;
+    
+}
+
+.LoginLayout{
+    border-radius: 15px;
+    display: flex;           
+    width: 900px;             
+    height: 500px;
+    overflow: hidden;   
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    
+}
+
+.buttons{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgba(67, 59, 136, 0.8);
+    background-color: rgba(55, 49, 114);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.cancel{
+    padding: 10px;
+    border-radius: 10px;
+    border-color:rgba(67, 59, 136, 0.8);
+    border: 2px solid rgba(67, 59, 136, 0.8);
+    background-color: rgb(205, 204, 207);
+    color: rgba(67, 59, 136, 0.8);
+    cursor: pointer;
+}
+
+.LoginLeft{
+    display: flex; 
+    flex:1;        
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient( rgba(255, 255, 255, 0.1)), 
+                      url('https://img.freepik.com/free-vector/gradient-wavy-background_23-2149123388.jpg?semt=ais_user_personalization&w=740&q=80');
+    
+    background-size: cover;
+    
+
+}
+/*Dhmiourgei wraia emfanish gia thn forma*/
+.formCreLogin {
+    flex: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #e0aa45;
+    color: azure;
+    text-align: center;
+   
+}
+
+/*Dhmiourgei wraia emfanish gia thn forma*/
+.formCre {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px 20px;
+    padding-left: 25px;
+    background-color: #e0aa45;
+    color: azure;
+    text-align: left;
+    overflow-y: auto; 
+    height: 100%;        
+    align-content: center;  
+    box-sizing: border-box; 
+}
+
+.formCre h3 {
+    grid-column: span 2;/*O titlos pianei kai tis duo sthles*/
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.formCre span, 
+.formCre a{
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+.LoginLeft{
+    color: aliceblue;
+    font-style: italic;
+}
+
+.formCre button.buttons {
+    grid-column: span 2;  
+    justify-self: center;   
+    width: 130px;       
+    margin-top: 20px;    
+}
+
+.FormLayout{
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 600px;    
+    max-width: 90%;       
+    background-color: #ffffff; 
+    overflow: hidden;
+    border: 5px solid rgba(105, 173, 218, 0.8); 
+    border-radius: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000000;
+    text-align: left; 
+    padding: 60px;         
+    width: 100%;         
+    box-sizing: border-box;
+    
+}
+
+.form h3{
+     color: #000000;
+     text-align: left;
+     font-size: 25px;
+     font-style: bold;
+}
+
+.FormBtn{
+
+   display: flex;
+   margin-top: 10px;
+   gap: 20px;
+
+}
+
+.form table th, 
+.form table td {
+    
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+    
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+
+}
+
+
+.Titles{
+
+    background-color: rgba(55, 49, 114);
+    color: aliceblue;
+}
+
+
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+.open { background-color: #d9534f; }
+.progress { background-color: #f0ad4e; } 
+.closed { background-color: #5cb85c; } 
+
+.announceLayout{
+    border-radius: 15px;
+    display: flex; 
+    justify-content: left;
+    align-items: left;  
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 600px;    
+    max-width: 90%;   
+    padding: 20px;    
+    background-color: #bbc1f1; 
+    overflow: hidden;
+    border: 2px solid rgba(105, 173, 218, 0.8); 
+    border-radius: 15px;
+}
+
+.details{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;           
+    padding: 10px;
+}
+
+.fade {
+    margin-left: 10px;
+    opacity: 0.6; 
+    font-size: 12px;
+}
+
+.userLayout{
+    border-radius: 15px;
+    display: flex; 
+    justify-content: left;
+    align-items: left;  
+    gap:50px;
+    width: 600px;    
+    max-width: 90%;   
+    overflow: hidden;
+   
+}
+
+.dropdown{
+    width: 100%; 
+    height: 40px; 
+    margin-bottom: 15px; 
+    margin-left: 70px;
+}
+
+.tableScroll {
+    width: 100%;           
+    overflow-x: auto;     
+    margin-top: 20px;
+}
+
+.logoutbtn {
+    background: none;       
+    border: none;         
+    padding: 0;            
+    cursor: pointer;        
+    outline: none;          
+}
