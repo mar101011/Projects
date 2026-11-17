@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <!--Edw emfanizetai to kommati me to menu-->
+    <header style="text-align:center; margin:0; padding: 20px 0; background:#1abc9c" id="Home">
+       <title>Company</title>
+       
+       <style>
+           .note{ 
+               color:aliceblue;
+               font-family: 'Courier New', Courier, monospace;
+           }
+           section{
+            margin:0;
+            padding: 20px 0;
+           }
+       </style>
+       <h4 class="note" style="font-weight: normal;">Who We Are?</h4>
+       
+        <nav> <!--Se auto to shmeio ftiaxnoume ta koumpia tou menu na odhgoun sto swsto shmeio-->
+          <a href="#Home" class="note">Home|</a>
+          <a href="#About us" class="note">About Us|</a>
+          <a href="#Our projects" class="note">Our projects|</a>
+          <a href="#Contact us" class="note">Contact Us</a>
+       
+       </nav>
+       <h3 class="note" style="font-weight: normal;">WE HAVE AN EYE FOR DESIGN</h3>
+    </header>
+
+    <!--Section About us-->
+    <section id="About us" style="text-align:center; background: #474e5d">
+        <h4 class="note">About us</h3>
+        <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2 class="note">Image of the company</h2>
+        <img src="https://img.freepik.com/premium-vector/abstract-leaf-with-sun-minimal-logo_89196-455.jpg" width="280" height="250"/>
+    </section>
+    
+    <!--Section Our projects-->
+    <section id="Our projects" style="text-align:center; background:#2f2f2f">
+        <h4 class="note">Our Projects</h3>
+            <span style="color:rgb(204, 84, 84); background-color: rgb(247, 226, 232); border-radius: 3px;">Portfolio</span>
+        <table class="note" align="center">
+            <tr>
+                <th>Title</th>
+                <th>Domain</th>
+                <th>Date</th>
+                <th>Days to complete</th>
+            </tr>
+            <tr>
+                <td>Neutral Networks</td>
+                <td>Deep Learning</td>
+                <td>29/03/2022</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Natural Language Processing</td>
+                <td>Artificial Intelligence</td>
+                <td>31/03/2022</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Tensorflow</td>
+                <td>Open Source Tools</td>
+                <td>31/12/2021</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Eshop</td>
+                <td >Web Developing</td>
+                <td>31/01/2022</td>
+                <td>40</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!--Section Contact Us-->
+    <section id="Contact us" style="text-align:center; margin:0; padding: 20px 0; background:#242424"  >
+        <h4 class="note">Contact us</h4>
+        
+        <form class="note" onsubmit="document.getElementById('successMessage').style.display='block'; return false;">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="surname">Last name:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea name="message" rows="10" cols="30" required></textarea><br>
+            <br>Gender:<br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other"><br><br>
+            <button type="submit" > Send message</button>
+            
+        </form><br><br>
+        <p id="successMessage" style="background-color:#5a8d46; color: rgb(230, 238, 230); display: none;">Thank you for contacting with us! We will review your message!</p>
+
+        <span class="note">Email:</span>
+        <a class="note" href="mailto:info@unipi.gr">info@unipi.gr</a><br>
+        <span class="note">Call us:</span>
+        <a class="note" href="tel:+302104142000">2104142000</a><br>
+        <span class="note">Address:</span>
+        <a class="note" href="https://www.google.com/maps/place/%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF+%CE%A0%CE%B5%CE%B9%CF%81%CE%B1%CE%B9%CF%8E%CF%82/@37.9416013,23.6529793,17z/data=!3m1!4b1!4m6!3m5!1s0x14a1bbe5bb8515a1:0x3e0dce8e58812705!8m2!3d37.9416013!4d23.6529793!16zL20vMGQwOTA0?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 
+          Καραολή και Δημητρίου 80, Πειραιάς 185 34 
+        </a>
+    </section>
+    
+    <!--Emfanizetai o footer-->
+    <footer style="text-align:center; margin:0; padding: 20px 0; background: #3f4146" class="note"> <p>About us Onepage <a href="https://www.unipi.gr/" style="color:#5069d4">unipi.gr</a></p></footer>
+</html>

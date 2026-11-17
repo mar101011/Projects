@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap:30px;
+}
+#title1{
+   color: rgb(153, 206, 206); 
+   background-color: #c3e3ec;
+}
+
+#title2{
+    color: rgb(171, 157, 209); 
+    background-color: rgb(184, 178, 241);
+ }
+ #title3{
+    color: rgb(196, 77, 77); 
+    background-color: rgb(216, 113, 113);
+ }
+ 
+ #title4{
+     color: rgb(201, 194, 98); 
+     background-color: rgb(241, 235, 147);
+     margin-right: 70px;
+  }
+/*Desktop*/
+@media(min-width: 992px){
+    section{
+        flex:1 1 25%;
+    }
+}
+
+/*Tablet*/
+@media(min-width: 427px) and (max-width: 768px) {
+    section{
+        flex:1 1 48%;
+    }
+}
+
+/*Mobile*/
+@media(max-width: 427px) {
+   section{
+       flex:1 1 100%;
+   }
+}
+section{
+    flex:1;
+    border: solid;
+    border-color:rgb(236, 130, 130);
+    background-color: rgb(248, 206, 227);
+    text-align: center;
+    
+}
+body{
+    background-color: rgb(255, 158, 166);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img{
+    border:solid;
+    border-color:rgb(236, 130, 130);
+    
+}
+p{
+    color: rgb(175, 60, 60);
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    color: rgb(221, 90, 90);
+    background-color: rgb(248, 206, 227);
+    border:solid;
+    border-color:rgb(236, 130, 130);
+}
+
+h3{
+    padding: 10px;  
+    margin-right: 150px;
+    margin-left:-15px;
+    border-radius: 10px;
+    text-align: left;
+    border:solid;
+}
+a{
+    color:rgb(245, 26, 99)
+}
+a:hover{
+    color: maroon;
+}
+p::first-letter{
+    font-size: 200%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+span{
+    color:rgb(175, 60, 60);
+}
+.image{
+    float:left;
+    margin:10px;
+}

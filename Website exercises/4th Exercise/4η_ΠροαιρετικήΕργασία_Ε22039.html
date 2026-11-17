@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final income</title>
+        <script src="4η_ΠροαιρετικήΕργασία_Ε22039.js"></script>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4305/4305512.png" type="image/icon type">
+        <style>
+            .button {
+                background: rgb(19, 117, 40);
+                border: none;
+                color: white;
+                padding: 15px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 30px;
+                margin-top: 20px;
+                
+            }
+            .section{
+                background: rgb(19, 117, 40);
+                border: none;
+                color: white;
+                padding: 15px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 30px;
+                margin-top: 20px;
+            }
+            
+        </style>
+    </head>
+    <header style="display: flex; justify-content: center; align-items: center; text-align: center; margin: 20px; margin-top: 5px; padding: 10px; background: rgb(48, 156, 80);">
+        <h1 style="color: white; display: flex; align-items: center; gap: 10px; margin-left: 100px;">
+            Final income calculator 
+            <img src="https://ugokawaii.com/wp-content/uploads/2023/01/flying-money-1.gif" width="100" height="80" alt="Flying money GIF">
+        </h1>
+    </header>
+    
+    <body background="https://media.istockphoto.com/id/1368169112/vector/money-green-seamless-pattern-vector-background-included-line-icons-as-piggy-bank-wallet.jpg?s=612x612&w=0&k=20&c=qjIUpnUPtiKGBgLnXGLQ_4qQUq36OvP82DIFTAdch70=">
+      <div style="display: flex; gap:50px; justify-content: center; height: 500px;">
+        <form style="border-radius: 30px; display: grid; width: 300px; background-color: rgb(17, 165, 62,0.9); text-align: center; padding: 40px;">
+           <label for="yIncome" style="font-size: 20px;color: aliceblue;">Yearly income</label>
+           <input type="number" id="yIncome" name="yIncome"><br>
+           <label for="dOBirth" style="font-size: 20px;color: aliceblue;">Date of birth</label>
+           <input type="date" id="dOBirth" name="dOBirth"><br>
+           <label for="numChild"  style="font-size: 20px;color: aliceblue;">Number of children</label>
+           <input type="number" max="4" min="0" id="numChild" name="numChild"><br>
+           <button class="button" id="colorBtn" type="button" onclick="count(); changeColor();">Submit</button>
+
+        </form>
+        <section class="section" style="border:solid; border-radius: 10px;  border-style:dotted; margin-top:100px; width: 300px; height: 220px; text-align: center;">
+            <p style="background-color: rgb(17, 165, 62,0.9); border-radius: 10px;">Income Tax: <span id="incomeTax" style="color: #e0d68d;">-</span> €</p>
+            <p style="background-color: rgb(17, 165, 62,0.9); border-radius: 10px;">Tax: <span id="tax" style="color: #e0d68d;">-</span> €</p>
+            <p style="background-color: rgb(17, 165, 62,0.9); border-radius: 10px;">Discount: <span id="discount" style="color: #e0d68d;">-</span> %</p>
+            <p style="background-color: rgb(17, 165, 62,0.9); border-radius: 10px;">Final Tax: <span id="finalTax" style="color: #e0d68d;">-</span> €</p>
+            <p style="background-color: rgb(17, 165, 62,0.9); border-radius: 10px;">Clear income: <span id="clearIncome" style="color: #e0d68d;">-</span> €</p>
+         </section>
+      </div>
+      
+      
+      
+    </body>
+    <footer style="text-align:center; margin:20px; padding: 5px; background:rgb(48, 156, 80)">
+        <span style="color:rgb(189, 250, 202); font-size: 18px;">Contact us: <a href="https://www.ds.unipi.gr/" style="color: rgb(189, 250, 202);">ds.unipi.gr</a></span>
+    </footer>
+</html>
