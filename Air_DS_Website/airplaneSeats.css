@@ -1,0 +1,132 @@
+    .plane { 
+        background: white;
+        border:solid 2px;
+        border-color:rgb(150, 152, 156);
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        padding-left: 150px;  
+        padding-right: 50px;   
+        border-top-left-radius: 400px 250px;
+        border-bottom-left-radius: 400px 250px;
+        
+    }
+
+    .planeRow {
+       display: inline-block;
+       white-space: nowrap;
+       width: 100%;
+       margin-left: 0;
+       padding: 5px 0;
+    }
+
+   
+
+    .planeRow p {
+        display: inline-block;
+        width: 20px;
+        margin-right: -15px;
+        font-size:13px;
+    }
+    
+    .seat,.choice {
+        border-radius: 5px;
+    }
+    
+    .seat:hover {
+        background: rgb(149, 71, 185);
+    }
+
+    .seat.selected {
+         background-color: #dd69a3; /* χρώμα όταν είναι επιλεγμένη */
+         color: white;
+    }
+     .numbers {
+         background:none;
+         color:black;
+         display: inline-block;
+         width: 35px;
+         height: 35px;
+        
+     }
+
+    .seat.numbers:hover {
+        background: none;
+    }
+
+    .letter{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size:10px;
+        color:rgb(185, 71, 86);
+    }
+
+    .extraLegroom {
+        background-color: rgb(165, 93, 199);
+        border:solid 2px rgb(91, 50, 110);
+        color:white;
+    }
+
+    .upFront {
+        background-color:rgb(91, 50, 110);
+        border:double 2px rgb(49, 28, 59); 
+        color:white;
+    }
+    .btnInfo{
+        margin:40px;
+    }
+
+    button.seat.reservedSeat { 
+        background-color: red;
+        color: white;
+        border-color: brown;
+    }
+    
+    #submitSeats:enabled {
+        background-color: rgba(118, 66, 148);
+        color: white;
+    }
+
+    #submitSeats:enabled:hover {
+        background-color: rgb(176, 105, 218,0.8);
+    } 
+
+@media(min-width: 991px){
+    
+    .plane {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;   
+}
+  .seat, .choice {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+}  
+.numbers {
+        
+    margin: -10px -4px 0px -4px;
+    padding-left: 2px;
+}
+}
+
+@media(max-width:991px) {
+    .plane {
+       width: 100%;
+    }
+     .seat,.choice {
+         display: inline-block;
+         margin: 4px 2px;
+         width: 35px;
+         height: 35px;
+         font-size: 12px;
+         
+    }
+    .numbers {
+         margin: -10px 2px ;
+         padding-left: 25px;
+         font-size: 12px;
+     }
+   
+}

@@ -1,0 +1,301 @@
+.footerDetails{
+    display:grid;
+}
+.contactDetails{
+ text-align: left;
+ margin-left: 100px;
+ padding-top: 50px;
+}
+
+.ticket{
+    background-color:rgb(212, 106, 177,0.9);
+    border:dashed 3px rgb(190, 67, 149);
+    color: white;
+    margin:20px;
+    text-align: center;
+}
+
+.formCre {
+    
+    background-color: rgba(212, 106, 177, 0.9);
+    color: azure;
+    text-align: center;
+   
+}
+
+
+fieldset {
+    display: grid;
+    color:azure;
+    text-align: center; 
+    border:none;
+    
+}
+
+.users{
+    padding: 20px;
+    margin-bottom:50px;
+    background-color: rgb(177, 65, 98);
+    list-style-type: none;
+    color:white;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 15px 8px 20px rgba(92, 48, 100, 0.8);
+}
+
+
+header{
+            
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center; 
+    margin:0; 
+    padding: 20px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    background:rgb(176, 105, 218,0.8);
+    border-bottom: solid 2px white ;
+}
+footer{
+     text-align:center; 
+     margin:0; 
+     padding: 20px 0; 
+     background-color: rgb(176, 105, 218,0.8);
+     border:solid white;
+}
+
+.air{ 
+    color:rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding:20px;
+}
+.air-login{
+            
+    background-color: rgba(118, 66, 148);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.air-login:hover { 
+    background-color: azure;
+}
+
+
+.air.active {
+    background:rgb(176, 105, 218,0.8);
+    font-weight: bold;
+}
+       
+.contact{
+   
+    color:azure;
+    
+}
+
+section{
+    margin:0;
+    padding: 20px 0;
+}
+h2,h3,h4{
+    font-family: cursive,sans-serif,'Times New Roman', Times, serif;
+    color:azure;
+}
+body{
+    background-image:url(https://i.redd.it/kkrs39mwozd71.jpg);
+    background-size: cover;
+
+}
+
+.inputs{
+   margin-top:20px; 
+   margin-bottom:20px;
+   background-color:rgba(255, 255, 255, 0.5);
+   padding:8px;
+   border:none;
+}
+
+button{
+    background-color: rgba(118, 66, 148,0.4);
+    border:none;
+    padding:10px;
+    margin-top:20px;
+    margin-left: 300px;
+    color:rgba(255, 255, 255, 0.4);
+}
+.buttonReserve{
+     all:unset;
+     appearance: none;
+     background-color: rgba(118, 66, 148);
+     border:none;
+     padding:10px;
+     color:azure;
+     border-radius: 30px;
+     margin-bottom: 30px;
+     
+}
+
+.buttons{
+    background-color: rgba(118, 66, 148);
+    border:none;
+    padding:10px;
+    margin-top:20px;
+    margin-left: 300px;
+    color:azure;
+}
+
+.buttons:hover{
+    background-color: rgb(176, 105, 218,0.8);
+}
+.buttonReserve:hover{
+    background-color: rgb(176, 105, 218,0.8);
+}
+
+/*error στην εισαγωγή στοιχείων για το register*/
+.err{
+    color: rgb(212, 33, 33);  
+    padding: 10px; 
+    margin-top:-10px;
+    margin-bottom: 20px;  
+}
+
+/*error στην εισαγωγή στοιχείων άλλων επιβατών*/
+.errDes{ 
+    color: rgb(212, 33, 33);  
+    font-weight: bold;
+    padding: 10px; 
+    margin-top:-20px;
+    margin-bottom: 20px;  
+}
+
+.menu nav ul {
+    list-style: none;
+
+}
+.hamburger{
+    
+    color: azure;
+    font-size: 25px;
+    background: transparent;
+}
+
+button img{
+    width: 30px;
+    margin-top: 10px;
+}
+
+ul{
+    padding: 15px;
+}
+
+li{
+    margin: 15px;
+}
+
+input[readonly]{
+    background-color: rgb(196, 199, 198) !important;
+    color: rgb(82, 81, 80);
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+/*Desktop*/
+@media(min-width: 992px){
+    .footerDetails{
+         
+         grid-template-columns: 1fr 1fr;
+    }
+    .ticket{
+        margin-left:330px;
+        margin-right:400px;
+    }
+    .formCre{
+        margin:60px;
+        margin-left:330px;
+        margin-right:400px;
+        padding:40px;
+        border-radius:40px;
+        width:40%;
+    }
+
+    fieldset{
+
+        padding:40px;
+        border-radius:40px;
+    }
+
+    .hamburger{
+        display:none;
+    }
+
+    .menu nav ul {
+        display:flex;
+    }
+    .air:hover { 
+        color: rgb(128, 0, 85);
+    }
+    .users{ 
+        margin-left:300px;
+        margin-right:300px;
+    }
+    .buttonReserve{
+        margin-right: 450px;
+        margin-left: 450px;
+    }
+}
+
+/*Tablet+Mobile*/
+@media(max-width: 991px) {
+    .footerDetails{
+        grid-template-columns: 1fr;
+    }
+   
+    iframe{
+        width:100%;
+    }
+    
+    .formCre {
+        width: 100%; 
+        max-width: 100%; 
+    }   
+    .menu{
+        display:none;
+    }
+    header {
+    position: relative;
+    }
+    .menu.show {
+        display: block;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        top: 10px;
+        right: 25px;  
+    
+    }
+    
+    .air:hover { 
+        color: rgb(116, 109, 184);
+    }
+    
+    .menu {
+         background-color: rgba(128, 0, 85,0.8); /* Σκούρο μοβ με διαφάνεια */
+         position: absolute; 
+         top:120px;     
+         right:0px;
+         width:100%;
+    }
+    fieldset{
+        width:100%;
+    }
+
+    .buttonReserve{
+        width: 30%;
+        margin-left: 33%;
+    }
+   
+}
